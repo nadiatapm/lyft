@@ -1,0 +1,41 @@
+*{
+	box-sizing:border-box;
+	margin:0;
+}
+
+body{
+	background-image:url(../img/bg.jpg);
+	/*100vw (ancho de ventanilla) y 100vh (alto de ventanilla)*/
+	background-repeat:no-repeat;
+	background-position:center;
+	background-size:cover;
+	height:100vh;
+
+}
+
+.logo{
+	width:20%;
+	margin-left:42%;
+	margin-top:17%;
+}
+
+.btn-default{
+	margin-left:20%;
+	background-color:#DA00AC;
+	font-size:20px;
+	text-align:center;
+	color:#ffffff;
+	width:65%;
+}
+
+.btn-default:hover{
+	color:#fd5d84;
+	padding:5%;
+}
+.b-bajo{
+	margin-top:100%;
+}
+
+
+
+/*bajar botones empezr con segunda pagina sing up*/
