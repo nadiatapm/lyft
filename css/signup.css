@@ -15,5 +15,12 @@ body{
 	margin-top:10px;
 }
 .form-action{
-	margin-top:30px;
+	
+}
+.sgte{
+	background-color:#DA00AC;
+	font-size:20px;
+	text-align:center;
+	color:#ffffff;
+	width:100%;
 }
