@@ -17,9 +17,8 @@ body{
 .form-action{
 	
 }
-.sgte{
-	background-color:#DA00AC;
-	font-size:20px;
+.btn-default-sgte{
+	background-color:#da00ac;
 	text-align:center;
 	color:#ffffff;
 	width:100%;
