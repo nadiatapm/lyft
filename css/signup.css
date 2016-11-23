@@ -1,19 +1,25 @@
 *{
 	box-sizing:border-box;
 	margin:0;
-
-
+	padding:0;
 }
+
 body{
-	background-position:center;
+	background-color:#cdb7b5;
+	/*background-position:center;
 	background-repeat:no-repeat;
 	background-size:cover;
-	height:100vh;
+	height:100vh;*/
 }
+
 .glyphicon {
 	font-size:20px;
-	margin-top:25px;
+	margin-top:40px;
 }
+.text-center{
+	margin-right:70px;
+}
+
 
 .form-action{
 	
