@@ -21,16 +21,17 @@ body{
 
 .btn-default{
 	margin-left:20%;
+	padding:5%;
 	background-color:#DA00AC;
 	font-size:20px;
 	text-align:center;
 	color:#ffffff;
-	width:65%;
+	width:70%;
 }
 
 .btn-default:hover{
 	color:#fd5d84;
-	padding:5%;
+	padding:9%;
 }
 .b-bajo{
 	margin-top:100%;

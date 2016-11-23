@@ -2,9 +2,9 @@
 	box-sizing:border-box;
 	margin:0;
 
+
 }
 body{
-	background-color:whitesmoke;
 	background-position:center;
 	background-repeat:no-repeat;
 	background-size:cover;
@@ -12,13 +12,16 @@ body{
 }
 .glyphicon {
 	font-size:20px;
-	margin-top:10px;
+	margin-top:25px;
 }
+
 .form-action{
 	
 }
 .btn-default-sgte{
 	background-color:#da00ac;
+	padding:15px;
+	margin-top:15px;
 	text-align:center;
 	color:#ffffff;
 	width:100%;
