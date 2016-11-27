@@ -1,0 +1,44 @@
+*{
+	box-sizing:border-box;
+	margin:0;
+	padding:0;
+}
+
+body{
+	background-color:#cdc5bf;
+	/*background-image:url(../img/26306989-Hexagon-Paper-Fold-Seamless-Background-Pattern-Stock-Vector);*/
+	/*100vw (ancho de ventanilla) y 100vh (alto de ventanilla)*/
+
+}
+
+.glyphicon {
+	font-size:20px;
+	margin-top:40px;
+}
+.text-center{
+	margin-right:70px;
+	margin-bottom:20px;
+}
+
+
+.line{
+	border-top:2px solid grey;
+	margin-bottom:5px;
+}
+#paises li {
+	list-style: none;
+	display: block;
+	margin-bottom: 7px;
+}
+#paises li a {
+	border: 2px solid blue;
+	display: block;
+	text-decoration: none;
+}
+#paises li a:hover {
+	background-color: #fedcba;
+}
+#paises img {
+	display: inline-block;
+	width: 20px;
+}
