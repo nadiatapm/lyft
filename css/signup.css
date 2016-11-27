@@ -6,6 +6,12 @@
 
 body{
 	background-color:#cdc5bf;
+	/*background-image:url(../img/26306989-Hexagon-Paper-Fold-Seamless-Background-Pattern-Stock-Vector);*/
+	/*100vw (ancho de ventanilla) y 100vh (alto de ventanilla)*/
+	background-repeat:no-repeat;
+	background-position:center;
+	background-size:cover;
+	height:100vh;
 
 }
 
@@ -26,12 +32,15 @@ body{
 	color:#ffffff;
 	width:100%;
 }
+
 .input-group{
-	margin-top:15px;
+	margin-top:25px;
 }
 
+.form-control{
+	margin-top:25px;
+}
 .line{
 	border-top:2px solid grey;
 	margin-bottom:5px;
-	
 }

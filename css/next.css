@@ -24,6 +24,9 @@ body{
 	color:#ffffff;
 	width:100%;
 }
+.checkbox{
+	text-align:center;
+}
 
 .line{
 	border-top:2px solid grey;
