@@ -33,12 +33,11 @@ body{
 	width:100%;
 }
 
-.input-group{
-	margin-top:25px;
-}
-
 .form-control{
 	margin-top:25px;
+}
+.glyphicon-chevron-down{
+	font-size:10px;
 }
 .line{
 	border-top:2px solid grey;
