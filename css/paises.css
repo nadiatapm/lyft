@@ -25,20 +25,21 @@ body{
 	border-top:2px solid grey;
 	margin-bottom:5px;
 }
-#paises li {
+
+.tip {
 	list-style: none;
 	display: block;
-	margin-bottom: 7px;
+	margin-bottom: 10px;
 }
-#paises li a {
-	border: 2px solid blue;
+.tip a {
 	display: block;
 	text-decoration: none;
 }
-#paises li a:hover {
-	background-color: #fedcba;
+.tip a:hover {
+	background-color:#da00ac;
 }
-#paises img {
+.tip img {
 	display: inline-block;
-	width: 20px;
+	margin-left:30px;
+	width: 50px;
 }
