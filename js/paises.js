@@ -1,9 +1,9 @@
-alert("hello");
+
 var paises = [
 {
 	nombre: "chile",
 	prefijo: "+569",
-	bandera: "img/90ab273436.png"
+	bandera: "img/Bandera-chilena.png"
 },
 {
 	nombre: "peru",
@@ -34,11 +34,6 @@ var paises = [
 	nombre: "Japon",
 	prefijo: "+81",
 	bandera: "img/Bandera_de_Japon.png"
-},
-{
-	nombre: "Corea del Sur",
-	prefijo: "+82",
-	bandera: "img/kr.png"
 },
 {
 	nombre: "Brasil",
