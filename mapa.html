@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+	<meta charset="utf-8">
+	<title>lyft</title>
+	<link rel="stylesheet" type="text/css" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/mapa.css">
+	<style type="text/css">
+		html, body {
+			height: 100%;
+			margin: 0;
+			padding: 0;
+		}
+		#map {
+			height: 100%;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<div class="row">
+			<div class="col-xs">
+				<div id="mySidenav" class="sidenav">
+				<a href=""><img src="user_icon.png"></a>
+					<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+					<a href="index.html"><span class="glyphicon glyphicon-home"></span> Home</a>
+					<a href="#"><span class="glyphicon glyphicon-gift"></span> Free Rides</a>
+					<a href="#"><span class="glyphicon glyphicon-time"></span> Ride History</a>
+					<a href="#"><span class="glyphicon glyphicon-credit-card"></span> Payment</a>
+					<a href=""><span class="glyphicon glyphicon-question-sign"></span> Help</a>
+					<a href=""><span class="glyphicon glyphicon-cog"></span> Settings</a>
+					<a href=""><span class="glyphicon glyphicon-globe"></span> Sign Up to drive</a>
+				</div>
+				
+				<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+			</div>
+		</div>
+	</header>
+	<div id="map"></div>
+	<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+	<script type='text/javascript' src='js/main.js'></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDX8SIsVv6n30zHkqVTB3Zj4ZwJH3uy0wA&signed_in=true&callback=initMap" async defer>
+	</script>
+</body>
+</html>

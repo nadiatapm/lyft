@@ -1,63 +1,72 @@
+//funciones paises
+$('#paises a').on('click', function(e){
+	// recupero el nombre del pais pulsado
+	var pais_pulsado = $(this).find('span').html();
 
-var paises = [
-{
-	nombre: "Chile",
-	prefijo: "+569",
-	bandera: "img/CL.png"
-},
-{
-	nombre: "Peru",
-	prefijo: "+519",
-	bandera: "img/PE.png"
-},
-{
-	nombre: "mexico",
-	prefijo: "+529",
-	bandera: "img/MX.png"
-},
-{
-	nombre: "Venezuela",
-	prefijo: "+58",
-	bandera: "img/VN.png"
-},
-{
-	nombre: "Estados Unidos",
-	prefijo: "+1",
-	bandera: "img/US.png"
-},
-{
-	nombre: "Reino Unido",
-	prefijo: "+44",
-	bandera: "img/GB.png"
-},
-{
-	nombre: "Japon",
-	prefijo: "+81",
-	bandera: "img/JP.png"
-},
-{
-	nombre: "Brasil",
-	prefijo: "+55",
-	bandera: "img/BR.png"
-},
-{
-	nombre: "Francia",
-	prefijo: "+33",
-	bandera: "img/FR.png"
+	// lo guardo en localStorage
+	window.localStorage.setItem('nombre_pais', pais_pulsado);
+});
+
+//validacion de datos mail nombre y telefono
+$("#nombre").submit(function () {  
+	if($("#nameUser").val().length < 1) {  
+		alert("El nombre es obligatorio");  
+		return false;  
+	}  
+	return false;  
+});  
+
+//funciones sidebar 
+function openNav() {
+	document.getElementById("mySidenav").style.width = "250px";
 }
-];
 
-// traerme el nombre del pais desde localStorage
-var nombre_pais = window.localStorage.getItem("nombre_pais") || "chile";
-
-// recuperar el objeto pais, desde el arreglo de paises
-var pais = {};
-for (var i=0 ; i<paises.length ; ++i){
-	if (paises[i].nombre == nombre_pais) {
-		pais = paises[i];
-		break;
-	}
+function closeNav() {
+	document.getElementById("mySidenav").style.width = "0";
 }
-// solo queda modificar el DOM
-$('#pais img').attr('src', pais.bandera);
-$('#prefijo').html(pais.prefijo);
+
+var map;
+function initMap() {
+	map = new google.maps.Map(document.getElementById('map'), {
+		center: {lat: -34.397, lng: 150.644},
+		zoom: 8
+	});
+}
+// Note: This example requires that you consent to location sharing when
+// prompted by your browser. If you see the error "The Geolocation service
+// failed.", it means you probably did not give permission for the browser to
+// locate you.
+
+function initMap() {
+	var map = new google.maps.Map(document.getElementById('map'), {
+		center: {lat: -34.397, lng: 150.644},
+		zoom:18
+	});
+	var infoWindow = new google.maps.InfoWindow({map: map});
+
+  // Try HTML5 geolocation.
+  if (navigator.geolocation) {
+  	navigator.geolocation.getCurrentPosition(function(position) {
+  		var pos = {
+  			lat: position.coords.latitude,
+  			lng: position.coords.longitude
+  		};
+
+  		infoWindow.setPosition(pos);
+  		infoWindow.setContent('Location found.');
+  		map.setCenter(pos);
+  	}, function() {
+  		handleLocationError(true, infoWindow, map.getCenter());
+  	});
+  } else {
+    // Browser doesn't support Geolocation
+    handleLocationError(false, infoWindow, map.getCenter());
+}
+}
+
+function handleLocationError(browserHasGeolocation, infoWindow, pos) {
+	infoWindow.setPosition(pos);
+	infoWindow.setContent(browserHasGeolocation ?
+		'Error: The Geolocation service failed.' :
+		'Error: Your browser doesn\'t support geolocation.');
+}
