@@ -47,7 +47,7 @@ var paises = [
 ];
 
 $(document).ready(function(){
-	alert("sddgfsd");
+	
 // traerme el nombre del pais desde localStorage
 var nombre_pais = window.localStorage.getItem("nombre_pais") || "chile";
 
