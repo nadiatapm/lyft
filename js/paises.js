@@ -46,6 +46,8 @@ var paises = [
 }
 ];
 
+$(document).ready(function(){
+	alert("sddgfsd");
 // traerme el nombre del pais desde localStorage
 var nombre_pais = window.localStorage.getItem("nombre_pais") || "chile";
 
@@ -60,4 +62,4 @@ for (var i=0 ; i<paises.length ; ++i){
 // solo queda modificar el DOM
 $('#pais img').attr('src', pais.bandera);
 $('#prefijo').html(pais.prefijo);
-
+});
